@@ -105,8 +105,8 @@
         <h2>Code Display Section</h2> <!-- Heading -->
         
           Here's the link for Code snippet:
-          <a href=" https://css-tricks.com/snippets/html/universal-ie6-css/">
-            Serving Up Universal IE 6 Stylesheet
+          <a href="https://css-tricks.com/snippets/html/get-directions-form-google-maps/">
+            Get Directions Form (Google Maps)
 
           </a>
 
@@ -116,21 +116,20 @@
         <blockquote>
             <p>
                 Here's a relevant question from Stack Overflow: 
-                <a href="https://stackoverflow.com/questions/11703684/using-ie-conditional-comments-inside-a-stylesheet">
-                  Using IE conditional comments inside a stylesheet
-                </a>
+                <a href="https://stackoverflow.com/questions/18866696/form-to-get-directions-via-google-maps">
+                  Form to get directions via Google Maps                </a>
             </p>
         </blockquote>
 
-        <!-- Displaying the code snippet using <pre> tags -->
         <pre>
-            
-          <script type='text/javascript' src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script>
-
-          
-        </pre>
-
-
+          <form action="http://maps.google.com/maps" method="get" target="_blank">
+             <label for="saddr">Enter your location</label>
+             <input type="text" name="saddr" />
+             <input type="hidden" name="daddr" value="350 5th Ave New York, NY 10018 (Empire State Building)" />
+             <input type="submit" value="Get directions" />
+          </form>
+       </pre>
+   
 </body>
 </html>
 
